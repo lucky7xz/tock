@@ -13,7 +13,8 @@ builds:
     goarch:
       - amd64
       - arm64
-    binary: janus
+    binary: tock
+    main: ./cmd/tock
 
 archives:
   - format: tar.gz
@@ -44,10 +45,10 @@ brews:
       name: homebrew-tap
       token: "{{ .Env.TAP_GITHUB_TOKEN }}"
     
-    name: janus
-    description: "Janus is a simple timetracker for the command line"
-    homepage: "https://github.com/kriuchkov/janus"
+    name: tock
+    description: "Tock is a simple timetracker for the command line"
+    homepage: "https://github.com/kriuchkov/tock"
     license: "GPL-3.0-only"
     directory: Formula
     test: |
-      system "#{bin}/janus --version"
+      system "#{bin}/tock --version"
