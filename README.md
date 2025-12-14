@@ -41,6 +41,11 @@ go install github.com/kriuchkov/tock/cmd/tock@latest
 go build -o tock ./cmd/tock
 ```
 
+**Download Binary**
+
+Download the latest release from the [Releases](https://github.com/kriuchkov/tock/releases) page.
+
+
 ### Basic Usage
 
 Start tracking time:
